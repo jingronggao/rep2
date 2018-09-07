@@ -34,3 +34,6 @@ spec:
               value: message,trace,accessLog,ffdc
           ports:
             - containerPort: 9080
+              name: http
+            - containerPort: 9443
+              name: https
