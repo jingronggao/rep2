@@ -8,6 +8,7 @@ metadata:
 spec:
   ports:
     - port: 9080
+    - port: 9443
   selector:
     app: modresortswar
   type: NodePort
@@ -39,3 +40,5 @@ spec:
         ports:
         - containerPort: 9080
           protocol: TCP
+        - containerPort: 9443
+          protocol: https
