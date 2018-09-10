@@ -13,6 +13,15 @@ spec:
   type: NodePort
   ports:
     - port: 9080
+      nodePort:30001
+  selector:
+    app: {{ template "fullname" . }}
+    release: {{ .Release.Name }}
+
+  type: NodePort
+  ports:
+    - port: 9443
+      nodePort:30002
   selector:
     app: {{ template "fullname" . }}
     release: {{ .Release.Name }}
