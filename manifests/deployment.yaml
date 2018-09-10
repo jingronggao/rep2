@@ -8,7 +8,6 @@ metadata:
 spec:
   ports:
     - port: 9080
-    - port: 9443
   selector:
     app: modresortswar
   type: NodePort
