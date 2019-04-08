@@ -8,7 +8,7 @@ FROM websphere-liberty:webProfile7
 #BINARIES: Add in all necessary application binaries
 COPY ./server.xml /config
 COPY Dockerfile ./binary/application/* /config/apps/
-
+RUN cp /config/apps/* /config/dropins/
 
 USER root
 #FEATURES: Install any features that are required
