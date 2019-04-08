@@ -49,7 +49,7 @@ ssl:
   createClusterSSLConfiguration: false
 
 ingress:
-  enabled: false
+  enabled: true
   rewriteTarget: "/"
   path: "/modresorts10war/"
   host: ""
